@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/post")
+@RequestMapping("/post")
 @RequiredArgsConstructor
 public class PostController {
     private final PostService postService;

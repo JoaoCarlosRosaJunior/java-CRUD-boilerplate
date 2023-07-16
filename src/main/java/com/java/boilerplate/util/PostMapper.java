@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 @Component
 public class PostMapper {
     public Post toPost(PostRequestDTO postDTO) {
-
         return Post.builder()
                 .title(postDTO.getTitle())
                 .text(postDTO.getText())

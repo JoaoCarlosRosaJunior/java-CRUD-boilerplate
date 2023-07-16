@@ -1,1 +1,10 @@
+com/java/boilerplate/controller/PostController.class
+com/java/boilerplate/service/PostServiceImpl.class
+com/java/boilerplate/repository/PostRepository.class
+com/java/boilerplate/entity/Post$PostBuilder.class
+com/java/boilerplate/dto/request/PostRequestDTO.class
+com/java/boilerplate/service/PostService.class
 com/java/boilerplate/BoilerplateApplication.class
+com/java/boilerplate/util/PostMapper.class
+com/java/boilerplate/dto/response/PostResponseDTO.class
+com/java/boilerplate/entity/Post.class

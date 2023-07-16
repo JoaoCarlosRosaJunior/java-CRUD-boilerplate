@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+  boilerplate-app:
+    container_name: boilerplate-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/PostAPI
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234567
+    depends_on:
+      - database
+
+  database:
+    container_name: my-postgres-db
+    image: postgres
+    environment:
+      - POSTGRES_DB=PostAPI
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234567
+    ports:
+      - 5432:5432
